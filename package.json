@@ -1,0 +1,35 @@
+{
+  "name": "ti.transform.npm-support",
+  "version": "0.1.0",
+  "description": "A Titanium CLI plugin that improves NPM support for Alloy projects",
+  "keywords": [
+    "appcelerator",
+    "titanium-cli-plugin",
+    "titanium-npm",
+    "ti.transform"
+  ],
+  "scripts": {
+    "postinstall": "ti-plugin-install -p ti.transform.npm-support",
+    "postupdate": "ti-plugin-install -p ti.transform.npm-support"
+  },
+  "author": {
+    "name": "Vlad Misyura",
+    "email": "vlad.misyura@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladm3/ti.transform.npm-support.git"
+  },
+  "main": "./lib/TransformNpmPlugin.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.1.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "fs-extra": "^3.0.1",
+    "require-resolve": "0.0.2",
+    "ti-plugin-install": "^0.1.0",
+    "webpack": "^3.10.0"
+  }
+}
